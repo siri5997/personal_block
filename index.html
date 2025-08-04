@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About Me</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: #fff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 1rem 0 0.2rem;
+        }
+
+        h2 {
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+        }
+
+        .bio {
+            text-align: center;
+            line-height: 1.6;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 0.3rem;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.75rem;
+        }
+
+        .skill {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.6rem 1rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            transition: 0.3s ease;
+        }
+
+        .skill:hover {
+            background: rgba(255, 255, 255, 0.25);
+            cursor: default;
+        }
+
+        .social-links {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.6rem 1rem;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .bio {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img class="profile-pic" src="https://via.placeholder.com/150" alt="Profile Picture" />
+    <h1>xyz</h1>
+    <h2>Frontend Developer • UI Enthusiast</h2>
+
+    <p class="bio">
+        Hi! I'm xyz, a passionate frontend developer with a knack for crafting clean, interactive, and accessible user experiences. I love solving problems using JavaScript, React, and CSS. When I’m not coding, I enjoy exploring new web technologies and helping others get started in tech.
+    </p>
+
+    <div class="section-title">Skills</div>
+    <div class="skills">
+        <div class="skill">HTML5</div>
+        <div class="skill">CSS3</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React.js</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">Responsive Design</div>
+    </div>
+
+    <div class="section-title">Connect with Me</div>
+    <div class="social-links">
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="mailto:youremail@example.com">Email</a>
+    </div>
+</div>
+
+</body>
+</html>
